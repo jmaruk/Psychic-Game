@@ -48,11 +48,11 @@ function playGame(level) {
       if (hiddenLetter === userGuess) {
         wins++;
         document.getElementById('wins').textContent = wins;
-        playGame();
+        playGame(level);
       } else if(guessesLeft === 0) {
         losses++;
         document.getElementById('losses').textContent = losses;
-        playGame();
+        playGame(level);
       }
     }
   };
